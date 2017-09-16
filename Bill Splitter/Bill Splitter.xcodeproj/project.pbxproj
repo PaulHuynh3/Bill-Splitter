@@ -13,6 +13,7 @@
 		DA854D891F6CD46B00E53E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA854D871F6CD46B00E53E86 /* Main.storyboard */; };
 		DA854D8B1F6CD46B00E53E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA854D8A1F6CD46B00E53E86 /* Assets.xcassets */; };
 		DA854D8E1F6CD46B00E53E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA854D8C1F6CD46B00E53E86 /* LaunchScreen.storyboard */; };
+		DABA50EF1F6D7FC200EF241D /* BillSplitter.m in Sources */ = {isa = PBXBuildFile; fileRef = DABA50EE1F6D7FC200EF241D /* BillSplitter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		DA854D8A1F6CD46B00E53E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA854D8D1F6CD46B00E53E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA854D8F1F6CD46B00E53E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABA50ED1F6D7FC200EF241D /* BillSplitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillSplitter.h; sourceTree = "<group>"; };
+		DABA50EE1F6D7FC200EF241D /* BillSplitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillSplitter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +61,9 @@
 		DA854D7D1F6CD46B00E53E86 /* Bill Splitter */ = {
 			isa = PBXGroup;
 			children = (
-				DA854D811F6CD46B00E53E86 /* AppDelegate.h */,
-				DA854D821F6CD46B00E53E86 /* AppDelegate.m */,
-				DA854D841F6CD46B00E53E86 /* ViewController.h */,
-				DA854D851F6CD46B00E53E86 /* ViewController.m */,
-				DA854D871F6CD46B00E53E86 /* Main.storyboard */,
-				DA854D8A1F6CD46B00E53E86 /* Assets.xcassets */,
-				DA854D8C1F6CD46B00E53E86 /* LaunchScreen.storyboard */,
-				DA854D8F1F6CD46B00E53E86 /* Info.plist */,
+				DABA50EB1F6D79E400EF241D /* View */,
+				DABA50EA1F6D79E200EF241D /* Controller */,
+				DABA50EC1F6D79E600EF241D /* Model */,
 				DA854D7E1F6CD46B00E53E86 /* Supporting Files */,
 			);
 			path = "Bill Splitter";
@@ -74,9 +72,40 @@
 		DA854D7E1F6CD46B00E53E86 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA854D8A1F6CD46B00E53E86 /* Assets.xcassets */,
+				DA854D811F6CD46B00E53E86 /* AppDelegate.h */,
+				DA854D821F6CD46B00E53E86 /* AppDelegate.m */,
+				DA854D8C1F6CD46B00E53E86 /* LaunchScreen.storyboard */,
+				DA854D8F1F6CD46B00E53E86 /* Info.plist */,
 				DA854D7F1F6CD46B00E53E86 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DABA50EA1F6D79E200EF241D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA854D841F6CD46B00E53E86 /* ViewController.h */,
+				DA854D851F6CD46B00E53E86 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DABA50EB1F6D79E400EF241D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA854D871F6CD46B00E53E86 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DABA50EC1F6D79E600EF241D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DABA50ED1F6D7FC200EF241D /* BillSplitter.h */,
+				DABA50EE1F6D7FC200EF241D /* BillSplitter.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +182,7 @@
 				DA854D861F6CD46B00E53E86 /* ViewController.m in Sources */,
 				DA854D831F6CD46B00E53E86 /* AppDelegate.m in Sources */,
 				DA854D801F6CD46B00E53E86 /* main.m in Sources */,
+				DABA50EF1F6D7FC200EF241D /* BillSplitter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +339,7 @@
 				DA854D941F6CD46B00E53E86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
